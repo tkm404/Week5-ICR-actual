@@ -15,11 +15,14 @@ function calculateAge(event) {
   pMars.append(myAgeReturn.mars);
   const pJup = document.createElement("p");
   pJup.append(myAgeReturn.jupiter);
-  document.querySelector("#response").append("Mercury age: "${pMerc});
-
-  document.querySelector("#response").append(Venus age: ${pVen});
-  document.querySelector("#response").append(Mars age: ${pMars});
-  document.querySelector("#response").append(Jupiter age: ${pJup});
+  document.querySelector("#response").append("Mercury age:");
+  document.querySelector("#response").append(pMerc);
+  document.querySelector("#response").append("Venus age:");
+  document.querySelector("#response").append(pVen);
+  document.querySelector("#response").append("Mars age:");
+  document.querySelector("#response").append(pMars);
+  document.querySelector("#response").append("Jupiter age:");
+  document.querySelector("#response").append(pJup);
   
   const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   myAgeReturn.yearsAhead(yearsInFuture);
