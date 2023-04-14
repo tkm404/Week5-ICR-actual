@@ -43,6 +43,7 @@ function calculateFuture(event) {
   document.querySelector("#response3").innerText = null;
   document.querySelector("#response3").append(yearsInFuture.yearsAhead(yearsFromNow));
 }
+
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   // myAgeReturn.yearsAhead(yearsInFuture);
 
@@ -66,7 +67,3 @@ window.addEventListener("load", function() {
   this.document.querySelector("#calculate-past-form").addEventListener("submit", calculatePast);
   this.document.querySelector("#calculate-future-form").addEventListener("submit", calculateFuture);
 });
-// window.addEventListener("load", function() {
-//   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
-//   document.querySelector("#rectangle-area-form").addEventListener("submit", handleRectangleForm);
-// });
