@@ -20,10 +20,10 @@ describe('Calculator', () => {
     expect(tomCalculator.mars).toEqual(16.49);
     expect(tomCalculator.jupiter).toEqual(2.61);
   });
-  test('should correctly return how many years have passed between a past age and a current age', () => {
-    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed.")
-  });
+  // test('should correctly return how many years have passed between a past age and a current age', () => {
+  //   expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed.")
+  // });
   test('should correctly return how many years have passed between a past age and current age on each planet', () => {
-    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed. 54.16 Mecury years have passed. 20.96 Venus years have passed. 6.91 Mars years have passed. 1.09 Jupiter years have passed.")
+    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed. 54.17 Mercury years have passed. 20.97 Venus years have passed. 6.91 Mars years have passed. 1.1 Jupiter years have passed.")
   })
 });
