@@ -7,6 +7,7 @@ function calculateAge(event) {
   event.preventDefault();
   const myAge = parseInt(document.querySelector("#myAge").value);
   const myAgeReturn = new Calculator(myAge);
+  document.querySelector("#response").innerText = null;
   const pMerc = document.createElement("p");
   pMerc.append(myAgeReturn.mercury);
   const pVen = document.createElement("p");
@@ -30,10 +31,26 @@ function calculatePast(event) {
   const currentAge = parseInt(document.querySelector("#currentAge").value);
   const yearsInPast = new Calculator(currentAge)
   const yearsAgo = parseInt(document.querySelector("#pastAge").value);
-  yearsInPast.yearsPassed(yearsAgo);
-  
-  document.querySelector("#past-response").innerText = null;
-  
+   document.querySelector("#response2").innerText = null;
+  document.querySelector("#response2").append(yearsInPast.yearsPassed(yearsAgo));
+
+ 
+  // const pMerc2 = document.createElement("p");
+  // pMerc2.append(yearsInPast.mercury);
+  // const pVen2 = document.createElement("p");
+  // pVen2.append(yearsInPast.venus);
+  // const pMars2 = document.createElement("p");
+  // pMars2.append(yearsInPast.mars);
+  // const pJup2 = document.createElement("p");
+  // pJup2.append(yearsInPast.jupiter);
+  // document.querySelector("#response2").append("Mercury age:");
+  // document.querySelector("#response2").append(pMerc2);
+  // document.querySelector("#response2").append("Venus age:");
+  // document.querySelector("#response2").append(pVen2);
+  // document.querySelector("#response2").append("Mars age:");
+  // document.querySelector("#response2").append(pMars2);
+  // document.querySelector("#response2").append("Jupiter age:");
+  // document.querySelector("#response2").append(pJup2);
 }
 
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
