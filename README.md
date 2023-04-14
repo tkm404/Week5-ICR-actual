@@ -1,8 +1,8 @@
-# (Application Name)
+# Week 5 Independent Code Review - Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### A program that returns a given age in the "years" of various interstellar bodies
 
-#### By (Your name here)
+#### By Thomas McDowell
 
 ## Technologies Used
 
