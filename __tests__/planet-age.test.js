@@ -23,4 +23,7 @@ describe('Calculator', () => {
   test('should correctly return how many years have passed between a past age and a current age', () => {
     expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed.")
   });
+  test('should correctly return how many years have passed between a past age and current age on each planet', () => {
+    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed. 54.16 Mecury years have passed. 20.96 Venus years have passed. 6.91 Mars years have passed. 1.09 Jupiter years have passed.")
+  })
 });
