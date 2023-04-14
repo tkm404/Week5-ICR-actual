@@ -24,6 +24,9 @@ describe('Calculator', () => {
   //   expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed.")
   // });
   test('should correctly return how many years have passed between a past age and current age on each planet', () => {
-    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed. 54.17 Mercury years have passed. 20.97 Venus years have passed. 6.91 Mars years have passed. 1.1 Jupiter years have passed.")
-  })
+    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed. 54.17 Mercury years have passed. 20.97 Venus years have passed. 6.91 Mars years have passed. 1.1 Jupiter years have passed.");
+  });
+  test('should correctly return how many years have yet to pass between the present and future on each planet', () => {
+    expect(tomCalculator.yearsAhead(36)).toEqual("5 Earth years have yet to pass. 20.38 Mercury years have yet to pass. 8.06 Venus years have yet to pass. 2.65 Mars years have yet to pass. 0.42 Jupiter years have yet to pass");
+  });
 });
