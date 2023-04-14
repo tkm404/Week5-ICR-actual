@@ -27,9 +27,13 @@ function calculateAge(event) {
 
 function calculatePast(event) {
   event.preventDefault();
+  const currentAge = parseInt(document.querySelector("#currentAge").value);
+  const yearsInPast = new Calculator(currentAge)
+  const yearsAgo = parseInt(document.querySelector("#pastAge").value);
+  yearsInPast.yearsPassed(yearsAgo);
+  
   document.querySelector("#past-response").innerText = null;
-  // const yearsAgo = parseInt(document.querySelector("#yearsAgo").value);
-  // myAgeReturn.yearsPassed(yearsAgo)
+  
 }
 
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
