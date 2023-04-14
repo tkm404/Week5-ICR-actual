@@ -6,15 +6,13 @@ body {
   background-size: cover;
 }
 
-#div {
-
-}
-
 .body-text {
   color:aliceblue;
 }
 .text-block {
-  color: aliceblue;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #1455ee;
   text-align: left;
-  width: 50%;
+  width: 70%;
 }
