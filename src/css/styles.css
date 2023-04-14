@@ -1,3 +1,8 @@
 body {
   background-color: lightblue;
 }
+
+.text-block {
+  text-align: left;
+  width: 50%;
+}
