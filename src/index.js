@@ -29,12 +29,20 @@ function calculateAge(event) {
 function calculatePast(event) {
   event.preventDefault();
   const currentAge = parseInt(document.querySelector("#currentAge").value);
-  const yearsInPast = new Calculator(currentAge)
+  const yearsInPast = new Calculator(currentAge);
   const yearsAgo = parseInt(document.querySelector("#pastAge").value);
    document.querySelector("#response2").innerText = null;
   document.querySelector("#response2").append(yearsInPast.yearsPassed(yearsAgo));
 }
 
+function calculateFuture(event) {
+  event.preventDefault();
+  const currentAge2 = parseInt(document.querySelector("#currentAge2").value);
+  const yearsInFuture = new Calculator(currentAge2);
+  const yearsFromNow = parseInt(document.querySelector("#futureAge").value);
+  document.querySelector("#response3").innerText = null;
+  document.querySelector("#response3").append(yearsInFuture.yearsAhead(yearsFromNow));
+}
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   // myAgeReturn.yearsAhead(yearsInFuture);
 
@@ -56,6 +64,7 @@ function calculatePast(event) {
 window.addEventListener("load", function() {
   document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
   this.document.querySelector("#calculate-past-form").addEventListener("submit", calculatePast);
+  this.document.querySelector("#calculate-future-form").addEventListener("submit", calculateFuture);
 });
 // window.addEventListener("load", function() {
 //   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
