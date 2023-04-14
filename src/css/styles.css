@@ -6,8 +6,12 @@ body {
   background-size: cover;
 }
 
+#div {
+
+}
+
 .body-text {
-  color:aliceblue
+  color:aliceblue;
 }
 .text-block {
   color: aliceblue;
