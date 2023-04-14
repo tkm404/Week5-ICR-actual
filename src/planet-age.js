@@ -41,4 +41,4 @@ export default class Calculator {
       
       return  `${yearsToGo} Earth years have yet to pass. ${mercuryFuture} Mercury years have yet to pass. ${venusFuture} Venus years have yet to pass. ${marsFuture} Mars years have yet to pass. ${jupiterFuture} Jupiter years have yet to pass.` 
     }
-}
+};
