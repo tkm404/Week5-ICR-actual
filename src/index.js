@@ -44,6 +44,11 @@ function calculateFuture(event) {
   document.querySelector("#response3").append(yearsInFuture.yearsAhead(yearsFromNow));
 }
 
+function calculateDistance(event) {
+  event.preventDefault();
+  const yearSpan = parseInt(document.querySelector("#current-year").value);
+  const distanceCalc = new Calculator(yearSpan)
+}
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   // myAgeReturn.yearsAhead(yearsInFuture);
 
@@ -66,4 +71,5 @@ window.addEventListener("load", function() {
   document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
   this.document.querySelector("#calculate-past-form").addEventListener("submit", calculatePast);
   this.document.querySelector("#calculate-future-form").addEventListener("submit", calculateFuture);
+  this.document.querySelector("#calculate-planet-travel").addEventListener("submit", calculateDistance);
 });
