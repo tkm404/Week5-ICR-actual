@@ -13,5 +13,7 @@ export default class Calculator {
     this.mars = parseFloat(marsYears);
     this.jupiter = parseFloat(jupiterYears);
     }
-    yearsPassed()
+    yearsPassed(pastAge) {
+      
+    }
 }
