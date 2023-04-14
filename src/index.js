@@ -33,42 +33,11 @@ function calculatePast(event) {
   const yearsAgo = parseInt(document.querySelector("#pastAge").value);
    document.querySelector("#response2").innerText = null;
   document.querySelector("#response2").append(yearsInPast.yearsPassed(yearsAgo));
-
- 
-  // const pMerc2 = document.createElement("p");
-  // pMerc2.append(yearsInPast.mercury);
-  // const pVen2 = document.createElement("p");
-  // pVen2.append(yearsInPast.venus);
-  // const pMars2 = document.createElement("p");
-  // pMars2.append(yearsInPast.mars);
-  // const pJup2 = document.createElement("p");
-  // pJup2.append(yearsInPast.jupiter);
-  // document.querySelector("#response2").append("Mercury age:");
-  // document.querySelector("#response2").append(pMerc2);
-  // document.querySelector("#response2").append("Venus age:");
-  // document.querySelector("#response2").append(pVen2);
-  // document.querySelector("#response2").append("Mars age:");
-  // document.querySelector("#response2").append(pMars2);
-  // document.querySelector("#response2").append("Jupiter age:");
-  // document.querySelector("#response2").append(pJup2);
 }
 
 // const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   // myAgeReturn.yearsAhead(yearsInFuture);
 
-
-// function handleTriangleForm() {
-//   event.preventDefault();
-//   document.querySelector('#response').innerText = null;
-//   const length2 = parseInt(document.querySelector('#length2').value);
-//   const length1 = parseInt(document.querySelector('#length1').value);
-//   const length3 = parseInt(document.querySelector('#length3').value);
-//   const triangle = new Triangle(length1, length2, length3);
-//   const response = triangle.checkType();
-//   const pTag = document.createElement("p");
-//   pTag.append(response);
-//   document.querySelector('#response').append(pTag);
-// }
 
 
 // function handleRectangleForm() {
