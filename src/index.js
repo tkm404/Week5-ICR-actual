@@ -1,11 +1,29 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import Caclulator from './planet-age.js';
 
 // import Triangle from './js/triangle.js';
 // import Rectangle from './js/rectangle.js';
 
 
+function calculateAge(event) {
+  event.preventDefault();
+  document.querySelector("#response").innerText = null;
+  const myAge = parseInt(document.querySelector("#myAge").value);
+  const myAgeReturn = new Calculator(myAge);
+  
+
+  
+  const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
+  myAgeReturn.yearsAhead(yearsInFuture);
+}
+function calculatePast(event) {
+  event.preventDefault();
+  document.querySelector("#past-response").innerText = null;
+  const yearsAgo = parseInt(document.querySelector("#yearsAgo").value);
+  myAgeReturn.yearsPassed(yearsAgo)
+}
 // function handleTriangleForm() {
 //   event.preventDefault();
 //   document.querySelector('#response').innerText = null;
@@ -19,6 +37,7 @@ import './css/styles.css';
 //   document.querySelector('#response').append(pTag);
 // }
 
+
 // function handleRectangleForm() {
 //   event.preventDefault();
 //   document.querySelector('#response2').innerText = null;
@@ -31,6 +50,11 @@ import './css/styles.css';
 //   document.querySelector('#response2').append(pTag);
 // }
 
+
+window.addEventListener("load", function() {
+  document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
+  this.document.querySelector("#calculate-past-form").addEventListener("click", calculatePast);
+})
 // window.addEventListener("load", function() {
 //   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
 //   document.querySelector("#rectangle-area-form").addEventListener("submit", handleRectangleForm);
