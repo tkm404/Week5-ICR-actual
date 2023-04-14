@@ -23,16 +23,19 @@ function calculateAge(event) {
   document.querySelector("#response").append(pMars);
   document.querySelector("#response").append("Jupiter age:");
   document.querySelector("#response").append(pJup);
-  
-  const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
-  myAgeReturn.yearsAhead(yearsInFuture);
 }
+
 function calculatePast(event) {
   event.preventDefault();
   document.querySelector("#past-response").innerText = null;
   // const yearsAgo = parseInt(document.querySelector("#yearsAgo").value);
   // myAgeReturn.yearsPassed(yearsAgo)
 }
+
+// const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
+  // myAgeReturn.yearsAhead(yearsInFuture);
+
+
 // function handleTriangleForm() {
 //   event.preventDefault();
 //   document.querySelector('#response').innerText = null;
@@ -62,7 +65,7 @@ function calculatePast(event) {
 
 window.addEventListener("load", function() {
   document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
-  this.document.querySelector("#calculate-past-form").addEventListener("click", calculatePast);
+  this.document.querySelector("#calculate-past-form").addEventListener("submit", calculatePast);
 });
 // window.addEventListener("load", function() {
 //   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
