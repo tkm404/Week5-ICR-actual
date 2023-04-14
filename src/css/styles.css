@@ -6,7 +6,11 @@ body {
   background-size: cover;
 }
 
+.body-text {
+  color:aliceblue
+}
 .text-block {
+  color: aliceblue;
   text-align: left;
   width: 50%;
 }
