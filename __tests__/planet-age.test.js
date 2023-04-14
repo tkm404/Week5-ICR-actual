@@ -13,4 +13,11 @@ describe('Calculator', () => {
     expect(tomCalculator.earth).toEqual(31);
     expect(tomCalculator.mercury).toEqual(129.17);
   });
+  test('should correctly return age in Venus, Mars, and Jupiter years // Venus = Earth / .62; Mars = Earth / 1.88; Jupiter = Earth / 11.86 //', () => {
+    expect(tomCalculator.earth).toEqual(31);
+    expect(tomCalculator.mercury).toEqual(129.17);
+    expect(tomCalculator.venus).toEqual(50);
+    expect(tomCalculator.mars).toEqual(16.49);
+    expect(tomCalculator.jupiter).toEqual(2.61);
+  });
 });
