@@ -14,6 +14,7 @@ export default class Calculator {
     this.jupiter = parseFloat(jupiterYears);
     }
     yearsPassed(pastAge) {
-      
+      let yearsPassed = this.earth - pastAge;
+      return yearsPassed + " Earth years have passed."
     }
 }
