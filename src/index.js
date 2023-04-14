@@ -1,19 +1,25 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Caclulator from './planet-age.js';
-
-// import Triangle from './js/triangle.js';
-// import Rectangle from './js/rectangle.js';
-
+import Calculator from './js/planet-age.js';
 
 function calculateAge(event) {
   event.preventDefault();
-  document.querySelector("#response").innerText = null;
   const myAge = parseInt(document.querySelector("#myAge").value);
   const myAgeReturn = new Calculator(myAge);
-  
+  const pMerc = document.createElement("p");
+  pMerc.append(myAgeReturn.mercury);
+  const pVen = document.createElement("p");
+  pVen.append(myAgeReturn.venus);
+  const pMars = document.createElement("p");
+  pMars.append(myAgeReturn.mars);
+  const pJup = document.createElement("p");
+  pJup.append(myAgeReturn.jupiter);
+  document.querySelector("#response").append("Mercury age: "${pMerc});
 
+  document.querySelector("#response").append(Venus age: ${pVen});
+  document.querySelector("#response").append(Mars age: ${pMars});
+  document.querySelector("#response").append(Jupiter age: ${pJup});
   
   const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
   myAgeReturn.yearsAhead(yearsInFuture);
@@ -21,8 +27,8 @@ function calculateAge(event) {
 function calculatePast(event) {
   event.preventDefault();
   document.querySelector("#past-response").innerText = null;
-  const yearsAgo = parseInt(document.querySelector("#yearsAgo").value);
-  myAgeReturn.yearsPassed(yearsAgo)
+  // const yearsAgo = parseInt(document.querySelector("#yearsAgo").value);
+  // myAgeReturn.yearsPassed(yearsAgo)
 }
 // function handleTriangleForm() {
 //   event.preventDefault();
@@ -54,7 +60,7 @@ function calculatePast(event) {
 window.addEventListener("load", function() {
   document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
   this.document.querySelector("#calculate-past-form").addEventListener("click", calculatePast);
-})
+});
 // window.addEventListener("load", function() {
 //   document.querySelector("#triangle-checker-form").addEventListener("submit", handleTriangleForm);
 //   document.querySelector("#rectangle-area-form").addEventListener("submit", handleRectangleForm);

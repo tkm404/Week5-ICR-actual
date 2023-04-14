@@ -1,4 +1,4 @@
-import Calculator from './../src/planet-age.js'
+import Calculator from '../src/js/planet-age.js'
 
 
 describe('Calculator', () => {
