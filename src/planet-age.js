@@ -27,4 +27,7 @@ export default class Calculator {
       
       return  `${yearsPassed} Earth years have passed. ${mercuryPast} Mercury years have passed. ${venusPast} Venus years have passed. ${marsPast} Mars years have passed. ${jupiterPast} Jupiter years have passed.`
     }
+    yearsAhead(futureAge) {
+    return "nothing yet"     
+    }
 }
