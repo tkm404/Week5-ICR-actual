@@ -20,4 +20,7 @@ describe('Calculator', () => {
     expect(tomCalculator.mars).toEqual(16.49);
     expect(tomCalculator.jupiter).toEqual(2.61);
   });
+  test('should correctly return how many years have passed between a past age and a current age', () => {
+    expect(tomCalculator.yearsPassed(18)).toEqual("13 Earth years have passed.")
+  });
 });
