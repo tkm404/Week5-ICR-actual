@@ -1,5 +1,9 @@
 body {
-  background-color: lightblue;
+  background-image: url("./../assets/images/transit-of-venus.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text-block {
