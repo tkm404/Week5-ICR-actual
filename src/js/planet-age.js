@@ -40,7 +40,7 @@ export default class Calculator {
     return `${yearsToGo} Earth years have yet to pass. ${mercuryFuture} Mercury years have yet to pass. ${venusFuture} Venus years have yet to pass. ${marsFuture} Mars years have yet to pass. ${jupiterFuture} Jupiter years have yet to pass.`;
   }
   distanceTravelled() {
-    let disEarthYear = (this.earth * 584)
+    let disEarthYear = (this.earth * 584);
     let disMercYear = parseFloat(disEarthYear * .24).toFixed(2);
     let disVenYear = (disEarthYear * .62).toFixed(2);
     let disMarsYear = (disEarthYear * 1.88).toFixed(2);
@@ -51,11 +51,11 @@ export default class Calculator {
     let marsTravel = parseFloat(disMarsYear);
     let jupTravel = parseFloat(disJupYear);
 
-    return `According to my entirely dubious calculations, in ${this.earth} Earth year(s):
+    return `According to my honestly dubious calculations, in ${this.earth} Earth year(s):
     Earth will travel ${disEarthYear} million miles.
     Mercury will travel ${mercTravel} million miles.
     Venus will travel ${venTravel} million miles.
     Mars will travel ${marsTravel} million miles.
-    Jupiter will travel ${jupTravel} million miles`
+    Jupiter will travel ${jupTravel} million miles.`;
   }
 }

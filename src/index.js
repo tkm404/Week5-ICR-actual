@@ -31,7 +31,7 @@ function calculatePast(event) {
   const currentAge = parseInt(document.querySelector("#currentAge").value);
   const yearsInPast = new Calculator(currentAge);
   const yearsAgo = parseInt(document.querySelector("#pastAge").value);
-   document.querySelector("#response2").innerText = null;
+  document.querySelector("#response2").innerText = null;
   document.querySelector("#response2").append(yearsInPast.yearsPassed(yearsAgo));
 }
 
@@ -47,25 +47,10 @@ function calculateFuture(event) {
 function calculateDistance(event) {
   event.preventDefault();
   const yearSpan = parseInt(document.querySelector("#current-year").value);
-  const distanceCalc = new Calculator(yearSpan)
+  const distanceCalc = new Calculator(yearSpan);
+  document.querySelector("#response4").innerText = null;
+  document.querySelector("#response4").append(distanceCalc.distanceTravelled());
 }
-// const yearsInFuture = parseInt(document.querySelector("#yearsInFuture").value);
-  // myAgeReturn.yearsAhead(yearsInFuture);
-
-
-
-// function handleRectangleForm() {
-//   event.preventDefault();
-//   document.querySelector('#response2').innerText = null;
-//   const length1 = parseInt(document.querySelector('#rect-length1').value);
-//   const length2 = parseInt(document.querySelector('#rect-length2').value);
-//   const rectangle = new Rectangle(length1, length2);
-//   const response = rectangle.getArea();
-//   const pTag = document.createElement("p");
-//   pTag.append(`The area of the rectangle is ${response}.`);
-//   document.querySelector('#response2').append(pTag);
-// }
-
 
 window.addEventListener("load", function() {
   document.querySelector("#calculator-form").addEventListener("submit", calculateAge);
