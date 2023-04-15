@@ -10,11 +10,13 @@ JavaScript
 HTML
 CSS
 Jest
+Babel
 webpack
 npm
 ES Linter
 
 ## Description
+Interplanetary Age calculator. Enter your age to find out how many "years" old you are on various planets. As a bonus, enter in a number of years to see how far the planets travel over that span of time... ish. Take the math with a grain of salt. Assigned as the Week 5 independent code review for Epicodus, demonstrating best testing practices with Jest/Babel, using webpack to make a more machine-readable website. 
 
 ## Setup/Installation Req's
 
@@ -28,7 +30,8 @@ Remember to rename the relevant title tags in webpack and package.json with the 
 
 ## Known Bugs
 
-*_Any known issues_
-*_go here_
+Background image is a little dodgy. Remind self to look up ways to keep it static, or find better column solution.
+
+The math is almost certainly wrong for distance travelled. Don't quote it. I'm no physicist. Or mathematician. Or rocket scientist.
 
 ## License
